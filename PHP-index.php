@@ -4,7 +4,7 @@ include('PHP10-con.php');
 $sql="SELECT * FROM msg ORDER BY id DESC";
 $mysqli_result = $db-> query($sql);
 if($mysqli_result == false){
-	echo "SQL错误";
+	echo "SQL语句错误";
 	exit;
 }
 $rows = [];
